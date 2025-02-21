@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Box Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+           
+            align-items: center;
+      
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            background: white;
+          
+        }
+
+        .grid div {
+            color: black;
+          
+            display: flex;
+           
+            padding: 20px;
+            font-weight: bold;
+        }
+
+       
+        .grid1 div, .grid3 div, .grid5 div {
+            background: red;
+            color: white;
+        }
+
+        .grid2 div, .grid4 div, .grid6 div {
+            background: skyblue;
+            color: black;
+        }
+
+        .big {
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="grid grid1">
+            <div class="big">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="grid grid2">
+            <div class="big">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="grid grid3">
+            <div class="big">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="grid grid4">
+            <div class="big">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="grid grid5">
+            <div class="big">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="grid grid6">
+            <div class="big">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </div>
+
+</body>
+</html>
